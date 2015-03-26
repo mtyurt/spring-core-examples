@@ -6,8 +6,11 @@ package common;
 
 
 public class PhilosophyBook implements Book {
+
+    public static final String COGITO_ERGO_SUM = "Cogito ergo sum";
+
     @Override
     public String talk() {
-        return "Cogito ergo sum";
+        return COGITO_ERGO_SUM;
     }
 }
