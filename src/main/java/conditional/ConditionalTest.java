@@ -1,4 +1,4 @@
-package profiling;
+package conditional;
 
 import common.Book;
 import org.junit.Test;
@@ -7,23 +7,26 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import static org.junit.Assert.assertNull;
+import static org.junit.Assert.*;
 
 /**
  * Created by mt on 26.03.2015.
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(classes = BookConfig.class)
-/*
-    Should run with spring.profiles.active VM option.
-    Set something other than "hist" or "phil" for test purposes.
+@ContextConfiguration(classes = BookShoppingConfig.class)
+/**
+ *
+ * We will decide the books we need to buy by
+ * looking up the registered courses.
  */
-public class VMOptionTest {
+public class ConditionalTest {
+
     @Autowired(required = false)
-    public Book book;
+    Book[] shoppingList;
 
     @Test
-    public void testNullBook() {
-        assertNull(book);
+    public void shouldBeEmpty(){
+        assertNull(shoppingList);
     }
+
 }

@@ -1,5 +1,8 @@
 package profiling;
 
+import common.Book;
+import common.HistoryBook;
+import common.PhilosophyBook;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
