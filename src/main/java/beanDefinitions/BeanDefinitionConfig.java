@@ -10,6 +10,9 @@ import org.springframework.context.annotation.ComponentScan;
 /**
  * Created by mt on 27.03.2015.
  * Demonstrates the possible ways to create beans.
+ *
+ * The @ComponentScan annotation makes ApplicationContext search
+ * for beans in the specified package.
  */
 @ComponentScan(basePackages = "beanDefinitions")
 public class BeanDefinitionConfig
