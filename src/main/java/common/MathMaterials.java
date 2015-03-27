@@ -1,4 +1,4 @@
-package beanDefinitions;
+package common;
 
 /**
  * Created by mt on 27.03.2015.

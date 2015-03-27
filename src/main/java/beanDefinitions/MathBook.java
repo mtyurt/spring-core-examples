@@ -1,6 +1,7 @@
 package beanDefinitions;
 
 import common.Book;
+import common.MathMaterials;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
