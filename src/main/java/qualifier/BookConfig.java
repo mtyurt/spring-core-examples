@@ -31,6 +31,6 @@ public class BookConfig {
     @Physics
     public Book physicsBok()
     {
-        return new PhsysicsBook();
+        return new PhysicsBook();
     }
 }

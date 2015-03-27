@@ -2,7 +2,7 @@ package qualifier;
 
 import common.HistoryBook;
 import common.PhilosophyBook;
-import common.PhsysicsBook;
+import common.PhysicsBook;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,6 +25,6 @@ public class QualifierTest {
     public void shouldSetBooks() {
         assertEquals(PhilosophyBook.COGITO_ERGO_SUM, courseBooks.getPhilosophyBook().talk());
         assertEquals(HistoryBook.ONCE_UPON_A_TIME, courseBooks.getHistoryBook().talk());
-        assertEquals(PhsysicsBook.THIRD_LAW_OF_NEWTON, courseBooks.getPhysicsBook().talk());
+        assertEquals(PhysicsBook.THIRD_LAW_OF_NEWTON, courseBooks.getPhysicsBook().talk());
     }
 }
