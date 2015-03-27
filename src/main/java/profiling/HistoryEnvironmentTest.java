@@ -15,7 +15,7 @@ import static org.junit.Assert.assertEquals;
  * Created by mt on 26.03.2015.
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(classes = BookConfig.class)
+@ContextConfiguration(classes = BookEnvironmentConfig.class)
 @ActiveProfiles("hist")
 public class HistoryEnvironmentTest {
 

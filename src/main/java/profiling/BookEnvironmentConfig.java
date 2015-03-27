@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Profile;
  */
 
 @Configuration
-public class BookConfig {
+public class BookEnvironmentConfig {
 
     @Bean
     @Profile("hist")

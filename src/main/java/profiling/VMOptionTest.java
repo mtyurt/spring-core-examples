@@ -13,7 +13,7 @@ import static org.junit.Assert.assertNull;
  * Created by mt on 26.03.2015.
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(classes = BookConfig.class)
+@ContextConfiguration(classes = BookEnvironmentConfig.class)
 /*
     Should run with spring.profiles.active VM option.
     Set something other than "hist" or "phil" for test purposes.
